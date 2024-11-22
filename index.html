@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Input for the user to search a location -->
+        <div class="search">
+            <input type="text" id="city" placeholder="Enter city" />
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <!-- Display Weather Info -->
+        <div id="weather-info">
+            <h2 id="city-name"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" style="color: red; display: none;">
+            <p>Sorry, we couldn't fetch the weather data. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
